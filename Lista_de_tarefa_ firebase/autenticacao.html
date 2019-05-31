@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Autenticação</title>
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/lumen/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" rel="stylesheet"></link>
+</head>
+<body>
+	<h1>Autenticação com Firebase </h1>
+
+	 <div class=" container col-md-4">
+	 	<div id="perfil" class="text-center"></div>
+	 	<h3 class="text-center" id="displayName">Você não esta autenticado!!!</h3>
+	 	
+	 	<br>
+	 	<form>
+	 		<div class="form-group">
+	 			<label for="emailInput">E-mail</label><br>
+	 			<input type="email" class="form-control" id="emailInput" placeholder="E-mail">
+	 		</div>
+	 		<div class="form-group">
+	 			<label for="senhaInput">Senha</label><br>
+	 			<input type="password" class="form-control" id="passwordInput" placeholder="Senha">
+	 		</div><br>
+	 	</form>
+	 	<button class="btn btn-lg btn-block btn-primary" id="authEmailPassButton">Autenticar</button><br>
+	 	<button class="btn btn-lg btn-block btn-info" id="createUserButton">Criar nova conta</button><br>
+	 	<p class="text-center"><small>-- ou --</small></p>
+	 	<p  class="text-center">
+	 		<button class="btn  btn-dark " id="authGitHubButton"><i class="fab fa-github fa-2x"> </i></button>
+	 		<button class="btn  btn-primary " id="authFacebookButton"><i class="fab fa-facebook fa-2x"></i></button>
+	 		<button class="btn  btn-info " id="authTwitterButton"><i class="fab fa-twitter fa-2x"></i></button>
+	 		<button class="btn  btn-danger " id="authGoogleButton"><i class="fab fa-google fa-2x"></i></button>
+	 		<button class="btn  btn-default " style="border: 1px solid #000;" id="authAnonymouslyButton"><i class="fas fa-mask fa-2x"></i></button>
+	 		<br><br>
+	 			<button class="btn btn-lg btn-block btn-default" id="logOutButton" style="border: 1px solid #000;">Sair</button>
+	 		<br>
+	 		<a href="index.html">voltar para Home</a>
+	 	</p>
+	 </div>
+
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+<script type="text/javascript" src="assets/js/app.js"></script>
+<script type="text/javascript" src="assets/js/authentication.js"></script>
+<!-- <script src="https://listadetarefas0909.firebaseio.com/clientes.json"></script> -->
+	
+</body>
+</html>
